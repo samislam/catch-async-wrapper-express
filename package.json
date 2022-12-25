@@ -1,0 +1,31 @@
+{
+  "name": "catchasync",
+  "version": "1.0.0",
+  "description": "middleware for handling exceptions inside of async express routes and passing them to your express or custom error handlers",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samislam/catchasync.git"
+  },
+  "keywords": [
+    "catchasync",
+    "express-async-handler",
+    "express-catch-async",
+    "express-async-middleware",
+    "express",
+    "middleware",
+    "trycatch-wrapper",
+    "trycatchwrapper",
+    "express-try-catch",
+    "express-trycatch"
+  ],
+  "author": "Islam Yamor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samislam/catchasync/issues"
+  },
+  "homepage": "https://github.com/samislam/catchasync#readme"
+}
