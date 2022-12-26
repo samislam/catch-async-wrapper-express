@@ -2,9 +2,11 @@
   "name": "catchasync",
   "version": "1.0.0",
   "description": "middleware for handling exceptions inside of async express routes and passing them to your express or custom error handlers",
-  "main": "index.js",
+  "main": "./src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "npm test"
+    "start": "node ./src",
+    "test": "npx nodemon -q ./tests/index.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +29,9 @@
   "bugs": {
     "url": "https://github.com/samislam/catchasync/issues"
   },
-  "homepage": "https://github.com/samislam/catchasync#readme"
+  "homepage": "https://github.com/samislam/catchasync#readme",
+  "dependencies": {
+    "@samislam/checktypes": "^1.0.1",
+    "@samislam/log": "^1.1.4"
+  }
 }
