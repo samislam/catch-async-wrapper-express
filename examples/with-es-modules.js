@@ -1,5 +1,5 @@
 import express from 'express'
-import catchAsync from 'catchasync'
+import catchAsync from 'catch-async-wrapper-express'
 const app = express()
 
 // if failed, next will be called with the error

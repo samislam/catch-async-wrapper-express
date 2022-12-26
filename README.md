@@ -1,15 +1,15 @@
-# catchasync
+# catch-async-wrapper-express
 
 a simple middleware for handling exceptions inside of async express routes and passing them to your express or custom error handlers.
 
 # Installation
 
 ```
-npm i catchasync
+npm i catch-async-wrapper-express
 ```
 
 ```js
-import catchAsync from 'catchasync'
+import catchAsync from 'catch-async-wrapper-express'
 ```
 
 # Requirements:
