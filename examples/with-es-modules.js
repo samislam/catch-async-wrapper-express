@@ -1,5 +1,5 @@
-import express from 'express'
-import catchAsync from 'catch-async-wrapper-express'
+const express = require('express')
+const catchAsync = require('catch-async-wrapper-express')
 const app = express()
 
 // if failed, next will be called with the error
@@ -34,4 +34,3 @@ app.post(
     })
   }, localErrorHandler)
 )
-

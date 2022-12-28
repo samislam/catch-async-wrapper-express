@@ -1,5 +1,5 @@
-import CatchAsyncError from './CatchAsyncError.js'
-import { isAsyncFunction } from '@samislam/checktypes'
+const CatchAsyncError = require('./CatchAsyncError.js')
+const { isAsyncFunction } = require('@samislam/checktypes')
 
 const useSnext = (errorHandler, req, res, next) => async (error) => {
   try {
@@ -15,4 +15,4 @@ const useSnext = (errorHandler, req, res, next) => async (error) => {
     )
   }
 }
-export default useSnext
+module.exports = useSnext

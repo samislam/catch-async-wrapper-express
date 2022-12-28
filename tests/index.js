@@ -1,6 +1,6 @@
-import express from 'express'
-import log from '@samislam/log'
-import catchAsync from '../src/catchAsync.js'
+const express = require('express')
+const log = require('@samislam/log')
+const catchAsync = require('../src/catchAsync.js')
 
 const app = express()
 app.use(express.json())

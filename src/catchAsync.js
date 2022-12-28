@@ -1,7 +1,7 @@
-import { isAsyncFunction } from '@samislam/checktypes'
-import useSnext from './useSnext.js'
+const { isAsyncFunction } = require('@samislam/checktypes')
+const useSnext = require('./useSnext.js')
 
-export default function catchAsync(middleware, errorHandler) {
+module.exports = function catchAsync(middleware, errorHandler) {
   return (req, res, next) => {
     const sNext = useSnext(errorHandler, req, res, next)
     const consumersNext = errorHandler ? sNext : next

@@ -8,4 +8,4 @@ class CatchAsyncError extends Error {
   }
 }
 
-export default CatchAsyncError
+module.exports = CatchAsyncError

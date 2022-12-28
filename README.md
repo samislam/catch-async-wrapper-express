@@ -9,7 +9,7 @@ npm i catch-async-wrapper-express
 ```
 
 ```js
-import catchAsync from 'catch-async-wrapper-express'
+const catchAsync = require('catch-async-wrapper-express')
 ```
 
 # Requirements:
