@@ -1,6 +1,6 @@
 {
   "name": "catch-async-wrapper-express",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "middleware for handling exceptions inside of async express routes and passing them to your express or custom error handlers",
   "main": "./src/index.js",
   "type": "commonjs",

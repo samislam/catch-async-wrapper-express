@@ -1,1 +1,1 @@
-export { default } from "./catchAsync.js";
+module.exports = require('./catchAsync.js')
