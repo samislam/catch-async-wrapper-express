@@ -1,7 +1,8 @@
 const CatchAsyncError = require('./CatchAsyncError.js')
-const { isAsyncFunction } = require('@samislam/checktypes')
+const { isAsyncFunction, isUndefined } = require('@samislam/checktypes')
 
 const useSnext = (errorHandler, req, res, next) => async (error) => {
+  if (isUndefined(error)) return next()
   try {
     isAsyncFunction(errorHandler)
       ? await errorHandler(error, req, res, next)

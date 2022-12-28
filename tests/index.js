@@ -28,12 +28,11 @@ app.use(express.json())
 // app.post(
 //   '/users',
 //   catchAsync(async (req, res, next) => {
-//     const data = await UserModel.create(req.body) // ex: using mongoose
-//     res.status(200).json({
-//       status: 'success',
-//       data,
-//     })
-//   }, localErrorHandler)
+//     next()
+//   }, localErrorHandler),
+//   (req, res, next) => {
+//     res.send('done')
+//   }
 // )
 
 // const localErrorHandler = async (error, req, res, next) => {
